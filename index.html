@@ -3,93 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moving Ball Animation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f9;
-        }
-
-
-        #animation-container {
-            width: 600px;
-            height: 150px;
-            border: 2px dashed #ccc;
-            position: relative;
-            margin-bottom: 20px;
-            background-color: #fff;
-        }
-
-
-        #ball {
-            width: 50px;
-            height: 50px;
-            background-color: red;
-            border-radius: 50%;
-            position: absolute;
-            left: 0px;
-            top: 50px;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Spider-Man - The Amazing Hero</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="logo.jpeg" alt="Spider-Man Logo" class="logo">
+                <span class="logo-text">SPIDER-MAN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#abilities" class="nav-link">Powers</a></li>
+                <li><a href="#movies" class="nav-link">Movies</a></li>
+                <li><a href="#villains" class="nav-link">Villains</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Hands-On Activity: Moving Ball Animation</h2>
-    
-    <div id-container id="animation-container">
-        <div id="ball"></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">SPIDER-MAN</h1>
+            <p class="hero-subtitle">With Great Power Comes Great Responsibility</p>
+            <button class="cta-button">Explore Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="hero.jpeg" alt="Spider-Man Hero" class="hero-img">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Spider-Man</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Peter Parker - The Amazing Spider-Man</h3>
+                <p>
+                    Spider-Man is a superhero created by Stan Lee and Steve Ditko. He first appeared in 
+                    the comic book "Amazing Fantasy #15" in 1962. Spider-Man is the alter ego of Peter Parker, 
+                    a student who gained superhuman powers after being bitten by a radioactive spider.
+                </p>
+                <p>
+                    After the death of his Uncle Ben, Peter learned that with great power comes great responsibility. 
+                    He has since dedicated his life to protecting the people of New York City from various threats.
+                </p>
+                <p>
+                    Peter Parker is known for his intelligence, wit, and determination. Despite facing numerous 
+                    personal and professional challenges, he continues to be one of the most beloved superheroes 
+                    in the Marvel Universe.
+                </p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <div class="about-image">
+                <img src="sm1.jpeg" alt="Peter Parker">
+            </div>
+        </div>
+    </section>
+
+    <!-- Powers & Abilities Section -->
+    <section id="abilities" class="abilities">
+        <h2 class="section-title">Powers & Abilities</h2>
+        <div class="abilities-grid">
+            <div class="ability-card">
+                <div class="ability-icon">💪</div>
+                <h3>Super Strength</h3>
+                <p>Can lift up to 10 tons with his enhanced superhuman strength.</p>
+            </div>
+            <div class="ability-card">
+                <div class="ability-icon">🕷️</div>
+                <h3>Wall Crawling</h3>
+                <p>Can adhere to and crawl along any surface, including walls and ceilings.</p>
+            </div>
+            <div class="ability-card">
+                <div class="ability-icon">⚡</div>
+                <h3>Spider Sense</h3>
+                <p>Precognitive ability that alerts him to nearby danger before it happens.</p>
+            </div>
+            <div class="ability-card">
+                <div class="ability-icon">🧠</div>
+                <h3>Genius Intellect</h3>
+                <p>Highly intelligent with expertise in science, engineering, and chemistry.</p>
+            </div>
+            <div class="ability-card">
+                <div class="ability-icon">🕸️</div>
+                <h3>Web-Slinging</h3>
+                <p>Inventor of web-shooters that allow him to swing through the city and create weapons.</p>
+            </div>
+            <div class="ability-card">
+                <div class="ability-icon">🏃</div>
+                <h3>Superhuman Agility</h3>
+                <p>Possesses incredible reflexes, balance, and acrobatic abilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section id="movies" class="movies">
+        <h2 class="section-title">Spider-Man Movies</h2>
+        <div class="movies-container">
+            <div class="movie-card">
+                <img src="sm1.jpeg" alt="Spider-Man (2002)">
+                <h3>Spider-Man</h3>
+                <p class="year">2002</p>
+                <p class="director">Director: Sam Raimi</p>
+                <p class="description">The origin story of Peter Parker as he becomes Spider-Man.</p>
+                <button class="movie-btn">View Details</button>
+            </div>
+            <div class="movie-card">
+                <img src="sm2.jpeg" alt="Spider-Man 2 (2004)">
+                <h3>Spider-Man 2</h3>
+                <p class="year">2004</p>
+                <p class="director">Director: Sam Raimi</p>
+                <p class="description">Peter struggles with his double life while facing Doctor Octopus.</p>
+                <button class="movie-btn">View Details</button>
+            </div>
+            <div class="movie-card">
+                <img src="sm3.jpeg" alt="The Amazing Spider-Man (2012)">
+                <h3>The Amazing Spider-Man</h3>
+                <p class="year">2012</p>
+                <p class="director">Director: Marc Webb</p>
+                <p class="description">A fresh take on Spider-Man's origin and his fight against The Lizard.</p>
+                <button class="movie-btn">View Details</button>
+            </div>
+            <div class="movie-card">
+                <img src="sm5.jpeg" alt="Spider-Man: Homecoming (2017)">
+                <h3>Spider-Man: Homecoming</h3>
+                <p class="year">2017</p>
+                <p class="director">Director: Jon Watts</p>
+                <p class="description">Peter Parker tries to balance high school and his superhero responsibilities.</p>
+                <button class="movie-btn">View Details</button>
+            </div>
+            <div class="movie-card">
+                <img src="sm6.webp" alt="Spider-Man: No Way Home (2021)">
+                <h3>Spider-Man: No Way Home</h3>
+                <p class="year">2021</p>
+                <p class="director">Director: Jon Watts</p>
+                <p class="description">Peter's identity is revealed, leading to a multiverse adventure.</p>
+                <button class="movie-btn">View Details</button>
+            </div>
+            <div class="movie-card">
+                <img src="sm7.jpeg" alt="Spider-Man: Beyond the Spider-Verse (2024)">
+                <h3>Spider-Man: Beyond the Spider-Verse</h3>
+                <p class="year">2024</p>
+                <p class="director">Director: TBA</p>
+                <p class="description">The next chapter in Miles Morales' Spider-Man journey across the multiverse.</p>
+                <button class="movie-btn">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Villains Section -->
+    <section id="villains" class="villains">
+        <h2 class="section-title">Spider-Man's Greatest Enemies</h2>
+        <div class="villains-grid">
+            <div class="villain-card">
+                <img src="gg.jpeg" alt="Green Goblin">
+                <h3>Green Goblin</h3>
+                <p>Norman Osborn, a ruthless industrialist who uses technology to become a powerful villain.</p>
+                <span class="threat-level">Threat Level: ⚠️⚠️⚠️⚠️⚠️</span>
+            </div>
+            <div class="villain-card">
+                <img src="do.jpeg" alt="Doctor Octopus">
+                <h3>Doctor Octopus</h3>
+                <p>Dr. Otto Octavius, a brilliant scientist with mechanical arms grafted to his body.</p>
+                <span class="threat-level">Threat Level: ⚠️⚠️⚠️⚠️</span>
+            </div>
+            <div class="villain-card">
+                <img src="v.jpeg" alt="Venom">
+                <h3>Venom</h3>
+                <p>An alien symbiote that bonds with a host, giving them incredible powers.</p>
+                <span class="threat-level">Threat Level: ⚠️⚠️⚠️⚠️⚠️</span>
+            </div>
+            <div class="villain-card">
+                <img src="c.jpeg" alt="Carnage">
+                <h3>Carnage</h3>
+                <p>Cletus Kasady bonded with a symbiote, becoming a brutal and unpredictable killer.</p>
+                <span class="threat-level">Threat Level: ⚠️⚠️⚠️⚠️⚠️</span>
+            </div>
+            <div class="villain-card">
+                <img src="e.jpeg" alt="Electro">
+                <h3>Electro</h3>
+                <p>Max Dillon, a man who gained electrical powers and uses them for destruction.</p>
+                <span class="threat-level">Threat Level: ⚠️⚠️⚠️⚠️</span>
+            </div>
+            <div class="villain-card">
+                <img src="t.jpeg" alt="Thanos">
+                <h3>Thanos</h3>
+                <p>The Mad Titan who threatened the entire universe and tested Spider-Man's limits.</p>
+                <span class="threat-level">Threat Level: ⚠️⚠️⚠️⚠️⚠️</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="s2.webp" alt="Gallery Image 1" class="gallery-img">
+                <div class="gallery-overlay">
+                    <p>Action Shot</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="s1.webp" alt="Gallery Image 2" class="gallery-img">
+                <div class="gallery-overlay">
+                    <p>Web Slinging</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="s3.webp" alt="Gallery Image 3" class="gallery-img">
+                <div class="gallery-overlay">
+                    <p>In Battle</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="s4.webp" alt="Gallery Image 4" class="gallery-img">
+                <div class="gallery-overlay">
+                    <p>Rooftop Chase</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="s5.webp" alt="Gallery Image 5" class="gallery-img">
+                <div class="gallery-overlay">
+                    <p>City Patrol</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="s6.webp" alt="Gallery Image 6" class="gallery-img">
+                <div class="gallery-overlay">
+                    <p>Heroic Pose</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Movie Details -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
     </div>
 
-    <button id="startBtn">Start Animation</button>
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content-full">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
 
-    <script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-content">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>📍 Location</h3>
+                    <p>New York City</p>
+                </div>
+                <div class="info-item">
+                    <h3>📧 Email</h3>
+                    <p>contact@spiderman.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>📱 Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        const ball = document.getElementById('ball');
-        const startBtn = document.getElementById('startBtn');
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Spider-Man Website. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+    </footer>
 
-        let position = 0; 
-        let animationInterval = null;
-
-p
-        function moveBall() {
-
-            if (position >= 500) {
-                clearInterval(animationInterval); 
-                startBtn.disabled = false; 
-                return;
-            }
-
-
-            position += 5;
-            ball.style.left = position + 'px';
-        }
-
-
-        startBtn.addEventListener('click', function() {
-
-            position = 0;
-            ball.style.left = '0px';
-
-            startBtn.disabled = true;
-
-            animationInterval = setInterval(moveBall, 50);
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
